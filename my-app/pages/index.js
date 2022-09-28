@@ -41,7 +41,7 @@ export default function Home() {
       // wait for the transaction to get mined
       await tx.wait();
       setLoading(false);
-      window.alert("You successfully minted a Crypto Dev!");
+      window.alert("You successfully minted a Yerzhan's NFT!");
     } catch (err) {
       console.error(err);
     }
@@ -67,7 +67,7 @@ export default function Home() {
       // wait for the transaction to get mined
       await tx.wait();
       setLoading(false);
-      window.alert("You successfully minted a Crypto Dev!");
+      window.alert("You successfully minted a Yerzhan's NFT!");
     } catch (err) {
       console.error(err);
     }
@@ -325,8 +325,7 @@ export default function Home() {
       return (
         <div>
           <div className={styles.description}>
-            Presale has started!!! If your address is whitelisted, Mint a Crypto
-            Dev 🥳
+            Presale has started!!! If your address is whitelisted, Mint a Yerzhan's NFT 🥳
           </div>
           <button className={styles.button} onClick={presaleMint}>
             Presale Mint 🚀
@@ -354,23 +353,31 @@ export default function Home() {
       </Head>
       <div className={styles.main}>
         <div>
-          <h1 className={styles.title}>Welcome to Crypto Devs!</h1>
+          <img className={styles.image} src="./cryptodevs/1.jpg" />
+        </div>
+        <div>
+          <img className={styles.image} src="./cryptodevs/2.jpg" />
+        </div>
+        <div>
+          <img className={styles.image} src="./cryptodevs/3.jpg" />
+        </div>
+        <div>
+          <img className={styles.image} src="./cryptodevs/4.jpg" />
+        </div>
+        <div>
+          <img className={styles.image} src="./cryptodevs/5.jpg" />
+        </div>
+      </div>
+        <div className={styles.text}>
+          <h1 className={styles.title}>Welcome to Yerzhan's NFT Collections!</h1>
           <div className={styles.description}>
-            Its an NFT collection for developers in Crypto.
+            Its an NFT collection by Yerzhan. But all these artworks are created by talented guy called Yerkebulan :)
           </div>
           <div className={styles.description}>
             {tokenIdsMinted}/20 have been minted
           </div>
           {renderButton()}
         </div>
-        <div>
-          <img className={styles.image} src="./cryptodevs/0.svg" />
-        </div>
-      </div>
-
-      <footer className={styles.footer}>
-        Made with &#10084; by Crypto Devs
-      </footer>
     </div>
   );
 }
